@@ -6,7 +6,7 @@ server:
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://test.eulerlcs.io:33061/hello?useUnicode=true&useSSL=true&useCharacterEncoding=utf-8&serverTimezone=JST
+    url: jdbc:mysql://192.168.77.191:33061/hello?useUnicode=true&useSSL=true&useCharacterEncoding=utf-8&serverTimezone=JST
     username: user01
     password: 123456
     schema: classpath:db/schema.sql

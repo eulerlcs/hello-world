@@ -24,7 +24,7 @@ public class UserController {
 
 	@RequestMapping({ "/", "/user/search" })
 	public String search(@ModelAttribute("user") User user) {
-		return "/user/detail";
+		return "/user/search";
 	}
 
 	@RequestMapping("/user/detail")
