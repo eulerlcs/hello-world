@@ -9,6 +9,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import com.github.eulerlcs.hello.domain.User;
 import com.github.eulerlcs.hello.service.UserService;
 
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
 @Controller
 public class UserController {
 	@Autowired
