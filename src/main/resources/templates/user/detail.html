@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hello-world</title>
+</head>
+<body>
+<p th:text="|hello ${user.name}|">welcom to our store!</p>
+<p th:text="|department:  ${user.department}|">department 1</p>
+<p th:text="${#dates.createNow()}">now</p>
+
+<form th:action="@{/user/search}" action="search.html">
+	<input type="submit" value="back">
+</form>
+</body>
+</html>

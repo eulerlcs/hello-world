@@ -1,0 +1,22 @@
+server:
+  port: 8081
+
+#logging:#  level:#    root: debug
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://test.eulerlcs.io:33061/hello?useUnicode=true&useSSL=true&useCharacterEncoding=utf-8&serverTimezone=JST
+    username: user01
+    password: 123456
+    schema: classpath:db/schema.sql
+    data: classpath:db/data.sql
+
+  thymeleaf:
+    cache: false
+    prefix: classpath:/templates/
+    suffix: .html
+
+mybatis-plus:
+  configuration: 
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
