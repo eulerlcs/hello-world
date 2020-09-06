@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://mysql80.w.eulerlcs.io:33068/hello?useUnicode=true&useSSL=true&useCharacterEncoding=utf-8&serverTimezone=JST
+    username: user01
+    password: 123456
+    schema: classpath:db/schema.sql
+    data: classpath:db/data.sql
+
+mybatis-plus:
+  configuration: 
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    
