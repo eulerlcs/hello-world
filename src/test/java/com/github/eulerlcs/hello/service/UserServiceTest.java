@@ -7,7 +7,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import com.github.eulerlcs.hello.domain.User;
-import com.github.eulerlcs.hello.mapper.UserMapper;
 
 @SpringBootTest
 class UserServiceTest {
