@@ -69,7 +69,7 @@
 
     <profiles>
         <profile>
-            <id>docker.io</id>
+            <id>prod</id>
             <properties>
                 <app.main.class>xxx</app.main.class>
                 <docker.image.prefix>docker.io/eulerlcs</docker.image.prefix>
@@ -79,7 +79,7 @@
         </profile>
 
         <profile>
-            <id>harbor.eulerlcs.io</id>
+            <id>dev</id>
             <properties>
                 <app.main.class>xxx</app.main.class>
                 <docker.image.prefix>harbor.eulerlcs.io/library</docker.image.prefix>

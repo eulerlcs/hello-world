@@ -1,0 +1,25 @@
+pipeline {
+    agent any
+    stages {
+        stage('コード取得') {
+            steps {
+                checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/eulerlcs/hello-world.git']]])
+            }
+        }
+        stage('コード分析') {
+            steps {
+                sh 'printenv'
+            }
+        }
+        stage('コードbiuld、Deploy') {
+            steps {
+                sh 'printenv'
+            }
+        }
+        stage('App起動') {
+            steps {
+                sh 'printenv'
+            }
+        }
+    }
+}
